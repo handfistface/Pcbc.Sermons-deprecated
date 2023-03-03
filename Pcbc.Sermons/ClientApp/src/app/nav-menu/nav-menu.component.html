@@ -1,0 +1,49 @@
+
+
+<div class="header-image">
+</div>
+
+<header>
+
+  <div class="navbar">
+    <div class="logo">
+      <a href="/">
+        <img id="logoImage" src="/assets/images/logo.png" alt="Peters Creek Baptist Church">
+      </a>
+    </div>
+    <a href="{{this.baseUrl}}/" class="navbar-brand"></a>
+    <ul mdbDropdownMenu class="nav navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link pr-3" href="{{this.baseUrl}}/contentpages.aspx?p=85016f96-a866-40eb-bfe7-fef6983b83ed" target="_parent">Visit Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="toggleIsMinistriesExpanded()">Ministries</a>
+          <div class="dropdown-menu-collection" *ngIf="this.isMinistriesExpanded">
+            <a class="dropdown-item" href="{{this.baseUrl}}/adult-ministries">Adult Ministries</a>
+            <a class="dropdown-item" href="{{this.baseUrl}}/contentpages.aspx?p=574cf0f2-777f-4e83-bd0d-c6ec508e5b25">Student Ministries</a>
+            <a class="dropdown-item" href="{{this.baseUrl}}/music-ministry">Music Ministries</a>
+            <a class="dropdown-item" href="{{this.baseUrl}}/contentpages.aspx?p=c6fc58f3-2a5b-4b68-9a60-d62435655520">Children Ministries</a>
+          </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link pr-3" href="{{this.baseUrl}}/messagearchive.aspx" target="_parent">Media</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="toggleIsWhoWeAre()">Who We Are</a>
+          <div class="dropdown-menu-collection" *ngIf="this.isWhoWeAreExpanded">
+            <a class="dropdown-item" href="{{this.baseUrl}}/staff.aspx" target="_parent">Staff</a>
+            <a class="dropdown-item" href="{{this.baseUrl}}/contentpages.aspx?p=b44c28a7-cd30-444c-bdef-fa123f9a8032" target="_parent">What We Believe</a>
+            <a class="dropdown-item" href="{{this.baseUrl}}/contentpages.aspx?p=93fcb16e-cb2a-404f-982e-f9512a688bb5" target="_parent">Church History</a>
+            <a class="dropdown-item" href="{{this.baseUrl}}/prayerrequests.aspx" target="_parent">Prayer</a>
+            <a class="dropdown-item" href="{{this.baseUrl}}/contentpages.aspx?p=587912c7-dad1-428f-9db2-ee7d664edb3b" target="_parent">Contact Us</a>
+          </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link pr-3" href="{{this.baseUrl}}/contentpages.aspx?p=9735d9c3-cb5d-4f08-a88f-74d117ee4d1c" target="_parent">Missions</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link pr-3" href="{{this.baseUrl}}/contentpages.aspx?p=4156fefa-d298-4dd3-9d2c-2a762a248dd3" target="_parent">Give</a>
+      </li>
+    </ul>
+  </div>
+</header>

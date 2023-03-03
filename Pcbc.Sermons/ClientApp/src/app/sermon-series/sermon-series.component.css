@@ -1,0 +1,41 @@
+
+.series-thumbnail {
+  max-width: 250px;
+  display: inline;
+}
+
+.audio-list-background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  min-width: 400px;
+  border-style:inset;
+  border: thin;
+  border-radius: 5px;
+}
+
+.audio-file-line-wrapper {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.audio-file-line {
+  cursor: pointer;
+  width: fit-content;
+  border-radius: 6px;
+  border: thin white solid;
+  padding: 2px;
+}
+.audio-file-line:hover {
+    border: thin black solid;
+}
+
+.toggle-bar {
+  padding-left: 90%;
+  padding-right: 9%;
+  cursor: pointer;
+  border-bottom: black;
+  border-width: thin;
+  border-style: outset;
+}

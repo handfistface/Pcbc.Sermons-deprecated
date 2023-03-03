@@ -1,0 +1,27 @@
+
+.media-header {
+  margin-left: 45%;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  color: white;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 8vw);
+  grid-gap: 2vw;
+}
+
+.audio-player {
+  position: fixed;
+  top: 100px; /* or whatever top you need */
+  left: 50%;
+  width: auto;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}

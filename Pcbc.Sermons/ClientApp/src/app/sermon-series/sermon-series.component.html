@@ -1,0 +1,17 @@
+
+<img src="{{sermonSeries.bannerNetworkPath}}"
+     class="series-thumbnail"
+     (click)="toggle()" />
+
+<div *ngIf="this.toggleView" class="audio-list-background">
+  <div class="toggle-bar" (click)="toggle()">
+    <span>
+      <img src="/assets/images/x_icon.png" style="height:20px;" />
+    </span>
+  </div>
+  <div *ngFor="let sermonAudio of sermonSeries.sermonAudioFiles">
+    <div class="audio-file-line-wrapper">
+      <p (click)="playAudioFile(sermonAudio)" class="audio-file-line">{{sermonAudio.fileName}}</p>
+    </div>
+  </div>
+</div>

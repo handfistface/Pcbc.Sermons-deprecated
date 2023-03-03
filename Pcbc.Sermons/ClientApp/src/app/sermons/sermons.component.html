@@ -1,0 +1,19 @@
+
+<div class="sermon-series">
+
+  <div class="media-header"></div>
+
+  <p *ngIf="!sermons"><em>Loading...</em></p>
+
+  <div class="audio-player">
+    <ng-template appAudioOutlet></ng-template>
+  </div>
+
+  <div class="gallery">
+    <div *ngFor="let sermonSeries of sermons.sermonSeries">
+      <app-sermon-series-component [sermonSeries]="sermonSeries"
+                                   [audioComponentRef]="this.audioComponentRef.instance"></app-sermon-series-component>
+    </div>
+  </div>
+
+</div>

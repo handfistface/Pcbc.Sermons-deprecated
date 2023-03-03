@@ -1,0 +1,12 @@
+
+.audio-player-controller {
+  position: fixed;
+  /* center the element */
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  /* give it dimensions */
+  min-height: 1vw;
+  width: 90%;
+}

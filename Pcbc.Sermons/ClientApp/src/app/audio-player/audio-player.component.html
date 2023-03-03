@@ -1,0 +1,11 @@
+
+
+<div *ngIf="audioFile">
+
+  <h1>Now playing {{audioFile.fileName}}</h1>
+
+  <audio class="audio-player-controller" preload="auto" controls>
+    <source src="{{audioFile.networkPath}}">
+    Your browser does not support the audio element.
+  </audio>
+</div>
